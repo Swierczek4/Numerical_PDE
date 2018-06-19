@@ -1,12 +1,7 @@
-function PDE = Advection_RHS(U,dx,dy,m,n)
+function PDE = Advection_RHS_velocity(U,dx,dy,m,n,a1,a2)
 %% Discretization of advection equation
 % via 6th order finite differences
 %% 
-
-%% Speeds in x and y direction
-a1 = 1;
-a2 = 0.1;
-%%
 
 %% Reshaping
 % Q comes as a column vector of height m*n
